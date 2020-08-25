@@ -1,0 +1,96 @@
+body {
+  font-family: "Avenir Next", sans-serif;
+  background: $bcg;
+  font-size: $base-font-size;
+}
+
+.container {
+  max-width: 90%;
+  margin: 3rem auto 0;
+}
+
+
+.grid {
+  max-width: 50rem;
+  display: grid;
+  margin: 0 auto;
+  padding: 0;
+  grid-gap: .625rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.grid__item--lighter:not(.animate) {
+  opacity: 0.6;
+}
+
+.grid__item {
+  background: $number;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10rem;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.ribbon-wrapper {
+  width: rem(80);
+  height: rem(80);
+  overflow: hidden;
+  position: absolute;
+  top: - rem(3);
+  left: - rem(3);
+
+  .ribbon {
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    position: relative;
+    padding: rem(5) 0;
+    top: 1.5rem;
+    left: - 1.6rem;
+    width: 7rem;
+    background-color: $ribbon;
+    font-size: .7rem;
+  }
+}
+
+.animate {
+  transform: scale(1.1);
+  z-index: 9;
+}
+
+.multiple-3-9 {
+  background: $multiple-3-9;
+}
+
+.multiple-3 {
+  background: $multiple-3;
+}
+
+.fibonacci {
+  background: $fibonacci;
+}
+
+@media screen and (min-width: 850px) {
+  .grid {
+    grid-gap: rem(10);
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
