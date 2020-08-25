@@ -1,4 +1,4 @@
-# Fibonacci
+# Ce n'est pas un FizzBuzz 2.0
 
 > Examen DCC aout 2019-2020
 
