@@ -24,7 +24,7 @@ Dans le cadre cet examen nous vous demandons de produire par JavaScript du code 
 1. S'il s'agit d'un nombre de la suite de Fibonacci alors, il faut ajouter la classe `fibonacci` à l'élément `<li>` ainsi que 2 éléments `.ribbon-wrapper` et `ribbon` constituant le ruban :
 
     ~~~html
-    <li class="premier grid__item">3
+    <li class="fibonacci grid__item">3
      <div class="ribbon-wrapper">
         <div data-text="somme" class="ribbon">Fibonacci</div>
       </div>
@@ -58,7 +58,7 @@ Dans le cadre cet examen nous vous demandons de produire par JavaScript du code 
 
 ## Aides
 
-### Nombres premiers
+### La suite de Fibonacci
 
 La suite de Fibonacci est une suite d'entiers dans laquelle chaque terme est la somme des deux termes qui le précèdent.
 
